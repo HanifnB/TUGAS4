@@ -1,0 +1,78 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #0f1922;
+            color: #c7d5e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculator-card {
+            background-color: #1b2838;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            width: 300px;
+        }
+        h2 {
+            color: #ffffff;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #66c0f4;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #316282;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        input[type="number"]::placeholder {
+            color: #90b8d4;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #47bfff 0%, #1a44c2 60%);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: linear-gradient(to right, #47bfff 0%, #2053eb 60%);
+        }
+        .result-box {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #316282;
+        }
+        .result-box p {
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .final-price {
+            font-size: 1.5rem;
+            color: #a4d007; 
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+        }
