@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Diskon</title>
+    <link rel="stylesheet" href="styling.css">
+
+</head>
+<body>
+
+    <div class="calculator-card">
+        <h2>Kalkulator Diskon</h2>
+        
+        <div class="input-group">
+            <label for="hargaAsli">Harga Asli (Rp)</label>
+            <input type="number" id="hargaAsli" placeholder="Contoh: 450000">
+        </div>
+
+        <div class="input-group">
+            <label for="persenDiskon">Diskon (%)</label>
+            <input type="number" id="persenDiskon" placeholder="Contoh: 75">
+        </div>
+
+        <button id="btnHitung">Hitung Harga</button>
+
+        <div class="result-box">
+            <p><span>Nilai Potongan:</span> <span id="nilaiPotongan">Rp 0</span></p>
+            <div class="final-price" id="hargaAkhir">Rp 0</div>
+        </div>
+    </div>
+</body>
+</html>
