@@ -29,5 +29,32 @@
             <div class="final-price" id="hargaAkhir">Rp 0</div>
         </div>
     </div>
+    <script>
+        const inputHarga = document.getElementById('hargaAsli');
+        const inputDiskon = document.getElementById('persenDiskon');
+        const btnHitung = document.getElementById('btnHitung');
+        
+        const teksPotongan = document.getElementById('nilaiPotongan');
+        const teksHargaAkhir = document.getElementById('hargaAkhir');
+
+        btnHitung.addEventListener('click', function() {
+            const harga = parseFloat(inputHarga.value) || 0;
+            const diskon = parseFloat(inputDiskon.value) || 0;
+
+            if (diskon > 100 || diskon < 0) {
+                alert("Persentase diskon harus antara 0 dan 100!");
+                return; 
+            }
+
+            const nilaiPotongan = harga * (diskon / 100);
+            const hargaAkhir = harga - nilaiPotongan;
+
+            const formatPotongan = "Rp " + Math.round(nilaiPotongan).toLocaleString('id-ID');
+            const formatAkhir = "Rp " + Math.round(hargaAkhir).toLocaleString('id-ID');
+
+            teksPotongan.textContent = formatPotongan;
+            teksHargaAkhir.textContent = formatAkhir;
+        });
+    </script>
 </body>
 </html>
